@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app';
 
 const initializeFirebaseApp = () => {
   return initializeApp({
-    apiKey: "AIzaSyAMiW3uLvcV-CPY7n1CC-elRyrca0GPeYw",
-    authDomain: "vue-ts-demo.firebaseapp.com",
-    projectId: "vue-ts-demo",
-    storageBucket: "vue-ts-demo.appspot.com",
-    messagingSenderId: "96956444586",
-    appId: "1:96956444586:web:b93af89fad8452378b85d3",
+    apiKey: process.env.VUE_APP_API_KEY,
+    authDomain: process.env.VUE_APP_AUTH_DOMAIN,
+    projectId: process.env.VUE_APP_PROJECT_ID,
+    storageBucket: process.env.VUE_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.VUE_APP_MESSAGING_SENDER_ID,
+    appId: process.env.VUE_APP_APP_ID,
   });
 };
 
